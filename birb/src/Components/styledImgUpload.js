@@ -64,7 +64,9 @@ function onImageChange(e) {
         <p>Drag 'n' drop some files here, or click to select files</p>
       </Container>
     </div>
-    { imageURLs.map(imageSrc => <img src={imageSrc} />) }
+    <br></br>
+    { imageURLs.map(imageSrc => <img src={imageSrc} style={{ width: 345 }}/>) }
+
     </>
   );
 }

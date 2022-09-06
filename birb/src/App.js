@@ -5,11 +5,10 @@ import React from 'react';
 //import { useState } from 'react';
 import './App.css';
 //import TextField from '@mui/material/TextField';
-import {Paper} from '@mui/material';// Material UI
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 //import Previews from './Components/previewImgUpload';
 import StyledDropzone from './Components/styledImgUpload';
-
+import BirbResponse from './Components/birbResponse';
 
 const theme = createTheme({
   typography: {
@@ -29,12 +28,15 @@ return (
     <div> 
       <h1 style={{ display: "flex", justifyContent: "center" }}>Birb or not birb</h1>
       <div className="center">
-        <label>Are birbs real?</label>
+        <label>Upload an image and we'll tell you if it's a birb.</label>
         <br/>
         <br/>
         <StyledDropzone />
-      <Paper elevation={3} className="MuiPaper-rounded" style={{display: 'inline-block', padding: '12px'}} >
-      </Paper>
+        <br></br>
+        <br></br>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+        <BirbResponse/>
+  </div>
       </div>
     </div>
     <br/>
